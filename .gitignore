@@ -1,6 +1,6 @@
 # ignore build result
-/build/
+build/
 
 # just helper scripts until i learn CMake
-/build.sh
-/tests/test_build.sh
+build.sh
+tests/test_build.sh
