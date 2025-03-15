@@ -20,9 +20,9 @@ typedef union Quat Quat;
 //=======================
 
 void m4x4f_identity(M4x4f *m);
-void m4x4f_mutliply(M4x4f *out, M4x4f *target);
-void m4x4f_rotate(M4x4f *out, M4x4f *target, float angle, Vec3f *vec);
-void m4x4f_affine_from_quat_scalars(M4x4f *mat, Quat *quat, Vec3f *position, Vec3f *scale);
+void m4x4f_multiply(M4x4f* out, const M4x4f* A, const M4x4f* B);
+void m4x4f_rotate(M4x4f* out, const M4x4f* target, float angle, Vec3f* vec);
+void m4x4f_from_quat_scalars(M4x4f* mat, Quat *quat, const Vec3f *position, const Vec3f *scale);
 void m4x4f_populate(M4x4f *out, float k);
 float m4x4f_at(M4x4f *m, unsigned char i, unsigned char j);
 

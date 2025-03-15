@@ -136,7 +136,7 @@ void m4x4f_rotate(M4x4f* out, const M4x4f* target, float angle, Vec3f* vec)
 	out->data[15] = 1;
 
 	// Multiply out with the target matrix add the rotation
-	m4x4f_mutliply(out, out, target);
+	m4x4f_multiply(out, out, target);
 }   
 
 /*
