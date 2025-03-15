@@ -1,5 +1,5 @@
 TEST_NAME="window"  # You can dynamically change this if needed
-LIB_PATH="../build/"  # Directory where your .so is located
+MATHLIB_PATH="../build/"  # Directory where your .so is located
 
 # Call build.sh to compile/prepare your library (if necessary)
 cd .. && ./build.sh
@@ -11,7 +11,6 @@ fi
 cd tests
 
 # Compile the source code, linking it with the shared library
-gcc "${TEST_NAME}.c" -o "$TEST_NAME" -L"$LIB_PATH" -lmathlib -lm &&
-
+gcc "${TEST_NAME}.c" -o "$TEST_NAME" -L"$MATHLIB_PATH" -lmathlib -lm &&
 # Run the program, ensuring the system can find the .so file at runtime
-LD_LIBRARY_PATH="$LIB_PATH" ./"$TEST_NAME"
+LD_LIBRARY_PATH="$MATHLIB_PATH" ./"$TEST_NAME"

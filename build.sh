@@ -31,7 +31,7 @@ OBJECTS=""
 for SOURCE in $SOURCES; do
     OBJECT="${SOURCE##*/}"  # Get the file name (without path)
     OBJECT="${OBJECT%.c}.o"  # Replace .c with .o
-    gcc -I../libs -c "$SOURCE" -o "$BUILD_DIR/$OBJECT"  # Compile the source file into the build directory
+    gcc -I./include -c "$SOURCE" -o "$BUILD_DIR/$OBJECT"  # Compile the source file into the build directory
     
     # Check for errors during compilation
     if [ $? -ne 0 ]; then
