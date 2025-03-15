@@ -5,13 +5,19 @@
 // Definitions
 //==============
 
-/* 
-	Quaternions represent both a rotation axis and an angle of rotation,
-	as 4d complex numbers(w + xi + yj + zk). During rotations, we want
-	the three axes to be rotating independent of each other. Quaternions,
-	avoid this problem(gimbal lock) by rotating axis on a 4d hypersphere
-*/
-
+/**
+ * @brief Quaternions represent both a rotation axis and an angle of 
+ * rotation. They represent rotations in 3D space on a 4d hypersphere
+ *
+ * Quaternions consist of four components: quaternion = w + xi + yj + zk. 
+ * A quaternion, is more compact (4 values instead of 9), and they are 
+ * more computationally efficient, especially when interpolating between 
+ * rotations. Where:
+ * -  w is the scalar part, which relates the axis of rotation.
+ * - {x, y, z} define a 3D vector, which acts as the axis of rotation.
+ * They are in a way, another way to describe motion on a coordinate system.
+ * Specifically, they describe rotation on a sphere.
+ */
 typedef union Quat {
 	struct {
 		float x;
