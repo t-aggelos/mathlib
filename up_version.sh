@@ -4,6 +4,7 @@
 # Each major is 15 minor, and each minor is 15 patches
 # This is done because I don't want to bother really,
 # thinking about major features and minor features.
+MATHLIB_VERSION_FILE="./version.properties"
 MATHLIB_VERSION_PATCH=$((MATHLIB_VERSION_PATCH + 1))
 if (( patch >= 15 )); then
     MATHLIB_VERSION_PATCH=0
