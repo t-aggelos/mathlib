@@ -3,6 +3,9 @@
 a small little library for my little lua project, and simultaneously learn some C(and math). proof of concept !!
 Do not use this in production, this is just an expirement im working on. I cannot guarantee the C will be good, but,
 alas: enjoy :)
+
+I should also say: this *is* a learning project, and the library will be unusable, until hopefully, 0.1.X. 
+That's the plan at least; I don't plan to just throw out code. 
 -- t_aggelos
 
 ---

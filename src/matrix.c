@@ -148,7 +148,7 @@ void m4x4f_multiply(M4x4f* out, const M4x4f* A, const M4x4f* B)
  * @param Vec3f position
  * @param Vec3f scale
  */
-void m4x4f_from_quat_scalars(
+void m4x4f_from_quat_scalar(
 M4x4f* m, 
 Quat *quat, 
 const Vec3f *position, 

@@ -5,7 +5,7 @@
 // computes the dot product between two vectors
 void vec3f_dot(float out, Vec3f* a, Vec3f* b)
 {
-	out =  a->x * b->x +
+	out = a->x * b->x +
 		   a->y * b->y +
 		   a->z * b->z; 
 }
